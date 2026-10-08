@@ -57,13 +57,13 @@ const $$RSC_SERVER_ACTION_1 = async function action() {
 function AuthButtons({ isLoggedIn, userName }) {
     if (isLoggedIn) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex flex-wrap items-center gap-3 bg-slate-900/80 border border-slate-800 px-4 py-2 rounded-2xl backdrop-blur-sm shadow-sm",
+            className: "auth-account",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center gap-2",
+                    className: "auth-user",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "w-8 h-8 rounded-full bg-gradient-to-tr from-violet-500 to-fuchsia-400 flex items-center justify-center text-xs font-black text-white uppercase shadow-inner",
+                            className: "auth-avatar",
                             children: userName ? userName.charAt(0) : "U"
                         }, void 0, false, {
                             fileName: "[project]/src/app/auth-buttons.tsx",
@@ -71,18 +71,18 @@ function AuthButtons({ isLoggedIn, userName }) {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col",
+                            className: "auth-user-details",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-[10px] text-slate-400 font-medium",
-                                    children: "เข้าสู่ระบบโดย"
+                                    className: "auth-caption",
+                                    children: "เข้าสู่ระบบแล้ว"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/auth-buttons.tsx",
                                     lineNumber: 17,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-xs font-bold text-slate-100 max-w-[120px] truncate",
+                                    className: "auth-user-name",
                                     children: userName ?? "ผู้ใช้งาน"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/auth-buttons.tsx",
@@ -105,8 +105,8 @@ function AuthButtons({ isLoggedIn, userName }) {
                     action: $$RSC_SERVER_ACTION_0,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         type: "submit",
-                        className: "px-3 py-1.5 text-xs font-bold rounded-xl bg-slate-800 text-slate-300 hover:bg-rose-600 hover:text-white border border-slate-700 hover:border-transparent transition-all duration-200 cursor-pointer",
-                        children: "Logout"
+                        className: "auth-logout-button",
+                        children: "ออกจากระบบ"
                     }, void 0, false, {
                         fileName: "[project]/src/app/auth-buttons.tsx",
                         lineNumber: 29,
@@ -128,11 +128,12 @@ function AuthButtons({ isLoggedIn, userName }) {
         action: $$RSC_SERVER_ACTION_1,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
             type: "submit",
-            className: "w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-2xl font-bold text-xs uppercase tracking-wider text-slate-950 bg-white hover:bg-violet-400 active:scale-95 transition-all duration-200 shadow-[0_0_20px_rgba(255,255,255,0.15)] cursor-pointer",
+            className: "auth-login-button",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                    className: "w-4 h-4",
+                    className: "auth-google-icon",
                     viewBox: "0 0 24 24",
+                    "aria-hidden": "true",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                             fill: "#4285F4",

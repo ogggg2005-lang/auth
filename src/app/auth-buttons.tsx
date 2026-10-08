@@ -8,14 +8,14 @@ type AuthButtonsProps = {
 export function AuthButtons({ isLoggedIn, userName }: AuthButtonsProps) {
   if (isLoggedIn) {
     return (
-      <div className="flex flex-wrap items-center gap-3 bg-slate-900/80 border border-slate-800 px-4 py-2 rounded-2xl backdrop-blur-sm shadow-sm">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-violet-500 to-fuchsia-400 flex items-center justify-center text-xs font-black text-white uppercase shadow-inner">
+      <div className="auth-account">
+        <div className="auth-user">
+          <div className="auth-avatar">
             {userName ? userName.charAt(0) : "U"}
           </div>
-          <div className="flex flex-col">
-            <span className="text-[10px] text-slate-400 font-medium">เข้าสู่ระบบโดย</span>
-            <span className="text-xs font-bold text-slate-100 max-w-[120px] truncate">
+          <div className="auth-user-details">
+            <span className="auth-caption">เข้าสู่ระบบแล้ว</span>
+            <span className="auth-user-name">
               {userName ?? "ผู้ใช้งาน"}
             </span>
           </div>
@@ -28,9 +28,9 @@ export function AuthButtons({ isLoggedIn, userName }: AuthButtonsProps) {
         >
           <button
             type="submit"
-            className="px-3 py-1.5 text-xs font-bold rounded-xl bg-slate-800 text-slate-300 hover:bg-rose-600 hover:text-white border border-slate-700 hover:border-transparent transition-all duration-200 cursor-pointer"
+            className="auth-logout-button"
           >
-            Logout
+            ออกจากระบบ
           </button>
         </form>
       </div>
@@ -46,9 +46,9 @@ export function AuthButtons({ isLoggedIn, userName }: AuthButtonsProps) {
     >
       <button
         type="submit"
-        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-2xl font-bold text-xs uppercase tracking-wider text-slate-950 bg-white hover:bg-violet-400 active:scale-95 transition-all duration-200 shadow-[0_0_20px_rgba(255,255,255,0.15)] cursor-pointer"
+        className="auth-login-button"
       >
-        <svg className="w-4 h-4" viewBox="0 0 24 24">
+        <svg className="auth-google-icon" viewBox="0 0 24 24" aria-hidden="true">
           <path
             fill="#4285F4"
             d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"

@@ -16,6 +16,10 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Product Explorer
+
+หน้ารายการสินค้าใช้ข้อมูลจาก DummyJSON พร้อมค้นหาและกรองตามหมวดหมู่ เมื่อเข้าสู่ระบบด้วย Google จะแสดงฟอร์มเพิ่ม/แก้ไขสินค้าและปุ่มจัดการสินค้า การแก้ไขในหน้าเว็บเป็นข้อมูลชั่วคราวและจะไม่ถูกบันทึกเมื่อโหลดหน้าใหม่
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
