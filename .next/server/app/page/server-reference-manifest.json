@@ -1,0 +1,27 @@
+{
+  "node": {
+    "00068b66483b2a746aa34f044de85a1cd3413eef9c": {
+      "workers": {
+        "app/page": {
+          "moduleId": 13262,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_0",
+      "filename": "src/app/auth-buttons.tsx"
+    },
+    "009db2b7a576bf370796e55f0a6f471d220544d1fa": {
+      "workers": {
+        "app/page": {
+          "moduleId": 13262,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "$$RSC_SERVER_ACTION_1",
+      "filename": "src/app/auth-buttons.tsx"
+    }
+  },
+  "edge": {}
+}

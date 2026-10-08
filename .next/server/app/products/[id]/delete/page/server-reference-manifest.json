@@ -1,0 +1,27 @@
+{
+  "node": {
+    "40e06d4227b44a58f810b07c894b3b60bbdf970d7a": {
+      "workers": {
+        "app/products/[id]/delete/page": {
+          "moduleId": 51040,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteProductAction",
+      "filename": "src/app/actions.ts"
+    },
+    "60122c986ca88ebb4e70c86414bf3330eab218e92f": {
+      "workers": {
+        "app/products/[id]/delete/page": {
+          "moduleId": 51040,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateProductAction",
+      "filename": "src/app/actions.ts"
+    }
+  },
+  "edge": {}
+}

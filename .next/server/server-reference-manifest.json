@@ -1,0 +1,60 @@
+{
+  "node": {
+    "00068b66483b2a746aa34f044de85a1cd3413eef9c": {
+      "workers": {
+        "app/page": {
+          "moduleId": 13262,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/auth-buttons.tsx",
+      "exportedName": "$$RSC_SERVER_ACTION_0"
+    },
+    "009db2b7a576bf370796e55f0a6f471d220544d1fa": {
+      "workers": {
+        "app/page": {
+          "moduleId": 13262,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/auth-buttons.tsx",
+      "exportedName": "$$RSC_SERVER_ACTION_1"
+    },
+    "40e06d4227b44a58f810b07c894b3b60bbdf970d7a": {
+      "workers": {
+        "app/products/[id]/delete/page": {
+          "moduleId": 51040,
+          "async": false,
+          "codeHash": null
+        },
+        "app/products/[id]/edit/page": {
+          "moduleId": 95003,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/actions.ts",
+      "exportedName": "deleteProductAction"
+    },
+    "60122c986ca88ebb4e70c86414bf3330eab218e92f": {
+      "workers": {
+        "app/products/[id]/delete/page": {
+          "moduleId": 51040,
+          "async": false,
+          "codeHash": null
+        },
+        "app/products/[id]/edit/page": {
+          "moduleId": 95003,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/actions.ts",
+      "exportedName": "updateProductAction"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "vJ2V3KNqkAjFUfMrradBeVc17Q7Kbbk5sNAOPFogEao="
+}
