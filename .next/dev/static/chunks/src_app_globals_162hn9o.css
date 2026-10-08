@@ -791,6 +791,41 @@ main {
   right: 0;
 }
 
+.theme-toggle {
+  color: #334155;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  transition: background-color .15s, border-color .15s, color .15s, box-shadow .15s, transform .15s;
+  display: grid;
+  box-shadow: 0 2px 8px #0f172a26;
+}
+
+.theme-toggle:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  box-shadow: 0 4px 12px #0f172a33;
+}
+
+.theme-toggle:active {
+  transform: scale(.96);
+}
+
+.theme-toggle:focus-visible {
+  outline-offset: 3px;
+  outline: 3px solid #3b82f659;
+}
+
+.theme-toggle svg {
+  width: 23px;
+  height: 23px;
+  display: block;
+}
+
 .auth-login-button {
   color: #334155;
   background: #fff;
@@ -1157,8 +1192,8 @@ tr:hover td {
   }
 
   .theme-toggle-position {
-    top: 12px;
-    left: 12px;
+    top: 10px;
+    left: 10px;
   }
 
   .product-form-grid {
@@ -1184,6 +1219,14 @@ tr:hover td {
 :root[data-theme="dark"] .theme-toggle:hover, :root[data-theme="dark"] .auth-login-button:hover {
   background-color: #273449;
   border-color: #475569;
+}
+
+:root[data-theme="dark"] .theme-toggle {
+  box-shadow: 0 2px 10px #00000059;
+}
+
+:root[data-theme="dark"] .theme-toggle:hover {
+  box-shadow: 0 4px 14px #00000073;
 }
 
 :root[data-theme="dark"] .auth-user-name {
